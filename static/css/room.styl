@@ -1,0 +1,95 @@
+.page-room
+  position relative
+  background #CA836D
+  .view
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+  .view-header
+    position: absolute
+    z-index: 99
+    top: 48px
+    right: 0
+    div
+      background  #9d8762
+      color #ffff
+      padding: 4px
+      margin-right: 8px
+      &:nth-of-type(1)
+        margin-bottom: 4px
+    a
+      color #ffff
+      text-decoration: none
+      small
+        display: inline-block
+        vertical-align: middle
+        width 4.5em
+
+    table
+      width: 100%
+      td
+        background: #ffffff
+        padding-top: 8px
+        padding-bottom: 8px
+        &:nth-of-type(1)
+          padding-left: 8px
+          padding-right: 8px
+          color #9d8762
+          img
+            margin-top: -2px
+            margin-left: 4px
+            vertical-align: middle
+  .view-body
+    z-index: 9
+    position absolute
+    right 0
+    left 0
+    top 0
+
+  .view-footer
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    z-index: 99
+
+  .room-pool
+    display block
+    width 100%
+    position absolute
+    left 0
+    right 0
+    bottom 0
+
+  .room-meat
+    display block
+    width 64%
+    position absolute
+    z-index 7
+    bottom 0
+    left 0
+    -webkit-transform: translateY(100%)
+    -moz-transform: translateY(100%)
+    -ms-transform: translateY(100%)
+    -o-transform: translateY(100%)
+    -webkit-transition: all linear 300ms
+    -moz-transition: all linear 300ms
+    -ms-transition: all linear 300ms
+    -o-transition: all linear 300ms
+    transition: all linear 300ms
+
+  .swiper-slide
+    img
+      display: block
+      width: 100%
+  &.fp-completely
+    .room-meat
+      display: block
+
+      -webkit-transform: translateY(0)
+      -moz-transform: translateY(0)
+      -ms-transform: translateY(0)
+      -o-transform: translateY(0)
+      transform: translateY(0)

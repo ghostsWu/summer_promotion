@@ -1,0 +1,199 @@
+.page-mall
+  background #ffffff
+
+.mall-title
+  position absolute
+  width 100%
+  left 50%
+  top 57px
+  -webkit-transform translateX(-50%) scale(.8, .8)
+  -moz-transform translateX(-50%) scale(.8, .8)
+  -ms-transform translateX(-50%) scale(.8, .8)
+  -o-transform translateX(-50%) scale(.8, .8)
+  transform translateX(-50%) scale(.8, .8)
+  z-index 12
+
+.mall-sub-title
+  position absolute
+  bottom 130px
+  left -100%
+  -webkit-transform scale(.9, .9)
+  -moz-transform scale(.9, .9)
+  -ms-transform scale(.9, .9)
+  -o-transform scale(.9, .9)
+  transform scale(.9, .9)
+  -webkit-transition all cubic-bezier(0.27, 1.29, 0.48, 0.99) 1s
+  -moz-transition all cubic-bezier(0.27, 1.29, 0.48, 0.99) 1s
+  -ms-transition all cubic-bezier(0.27, 1.29, 0.48, 0.99) 1s
+  -o-transition all cubic-bezier(0.27, 1.29, 0.48, 0.99) 1s
+  transition all cubic-bezier(0.27, 1.29, 0.48, 0.99) 1s
+  display block
+  width 100%
+  z-index 11
+
+.mall-balloon-blue
+  position absolute
+  width 40%
+  bottom 90px
+  z-index 9
+  animation blue-balloon 3000ms infinite
+
+.mall-balloon-red
+  position absolute
+  width 40%
+  bottom 75px
+  right -0px
+  z-index 5
+  -webkit-animation red-balloon 800ms infinite
+  -moz-animation red-balloon 800ms infinite
+  animation red-balloon 800ms infinite
+
+.mall-car
+  position absolute
+  left 10px
+  z-index 8
+  bottom 28px
+  width 68%
+
+.mall-car-balloon
+  position absolute
+  right -120%
+  width 100%
+  bottom 0
+  height 100px
+  z-index   8
+  -webkit-transition   all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+  -moz-transition   all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+  -ms-transition   all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+  -o-transition   all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+  transition   all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+
+.mall
+  overflow hidden
+  -webkit-transform-style preserve-3d
+  transform-style preserve-3d
+  .sky,
+  .build,
+  .road
+    -webkit-animation-name run
+    animation-name run
+    -webkit-animation-timing-function linear
+    animation-timing-function linear
+    -webkit-animation-iteration-count infinite
+    animation-iteration-count infinite
+    -webkit-animation-play-state paused
+    animation-play-state paused
+  .sky
+    width 200%
+    height 100%
+    position absolute
+    right 0
+    top 0
+    z-index 1
+    background-image url(../assets/mall_sky.jpg)
+    background-size 50% auto
+    background-position left top
+    background-repeat repeat-x
+    -webkit-animation-duration 6s
+    animation-duration 6s
+
+  .build
+    width 400%
+    height 360px
+    position absolute
+    right 0
+    bottom 100px
+    background-image url(../assets/mall_building.png)
+    background-size 50% auto
+    background-repeat repeat-x
+    background-position left bottom
+    z-index 3
+    -webkit-animation-duration 5s
+    animation-duration 5s
+    -webkit-backface-visibility hidden
+    backface-visibility hidden
+    -webkit-animation-fill-mode both
+    animation-fill-mode both
+    -webkit-transform scale(1.5, 1.5)
+    transform scale(1.5, 1.5)
+
+  .road
+    width 200%
+    height 70px
+    position absolute
+    right 0
+    bottom 0
+    z-index 9
+    background-image url(../assets/mall_road.png)
+    background-size 50% 64px
+    background-position left bottom
+    background-repeat repeat-x
+    -webkit-animation-duration .5s
+    animation-duration .5s
+
+&.fp-completely
+  .sky,
+  .build,
+  .road
+    -webkit-animation-play-state running
+    animation-play-state running
+  .mall-sub-title
+    -webkit-transform translateX(100%) scale(.9, .9)
+    -moz-transform translateX(100%) scale(.9, .9)
+    -ms-transform translateX(100%) scale(.9, .9)
+    -o-transform translateX(100%) scale(.9, .9)
+    transform translateX(100%) scale(.9, .9)
+  .mall-car-balloon
+    -webkit-transform translateX(-120%)
+    -moz-transform translateX(-120%)
+    -ms-transform translateX(-120%)
+    -o-transform translateX(-120%)
+    transform translateX(-120%)
+
+@-webkit-keyframes run
+  from
+    background-position-x 0
+  to
+    background-position-x 100%
+
+@keyframes run
+  from
+    background-position-x 0
+  to
+    background-position-x 100%
+
+@-webkit-keyframes red-balloon
+
+  0%
+    right 0
+
+  50%
+    right 5px
+
+  100%
+    right 0
+
+@keyframes red-balloon
+
+  0%
+    right 0
+
+  50%
+    right 5px
+
+  100%
+    right 0
+
+@keyframes blue-balloon
+
+  0%
+    right -15px
+
+  50%
+    right -20px
+
+  100%
+    right -15px 
+
+
+

@@ -1,0 +1,784 @@
+
+body
+  background-image: url(../assets/cover_bg.jpg);
+  background-size: 100% auto;
+  background-position: center;
+
+body .page
+  box-shadow: 0px 0px 29px rgba(17, 100, 213, 0.62);
+
+.page .scroll
+  width: 33px;
+  height: 14px;
+  background-image: url(../assets/scroll.svg);
+  background-size: 100% auto;
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  margin-left: -16.5px;
+
+.cover,
+.jacky,
+.ultra
+  overflow: hidden;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+
+.cover img,
+.jacky img,
+.ultra img
+  max-width: 100%;
+
+.cover ul,
+.jacky ul,
+.ultra ul
+  padding: 0;
+  margin: 0;
+
+.cover ul li,
+.jacky ul li,
+.ultra ul li
+  list-style-type: none;
+
+.cover
+  background-image: url(../assets/cover_bg.jpg);
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #1f162b;
+  text-align: center;
+
+.cover .title_10th
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  margin-left: -12.5%;
+  z-index: 99;
+
+.cover .deformation
+  width: 60%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 37.4%;
+
+.cover .deformation li
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+
+.cover .deformation li.deformation01
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(34%, -9.1%);
+  -ms-transform: translate(34%, -9.1%);
+  transform: translate(34%, -9.1%);
+
+.cover .deformation li.deformation02
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: translate(-33%, -8.8%);
+  -ms-transform: translate(-33%, -8.8%);
+  transform: translate(-33%, -8.8%);
+
+.cover .deformation li.deformation03
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transform: translate(-33%, 9%);
+  -ms-transform: translate(-33%, 9%);
+  transform: translate(-33%, 9%);
+
+.cover .deformation li.deformation04
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transform: translate(-33%, 8.9%);
+  -ms-transform: translate(-33%, 8.9%);
+  transform: translate(-33%, 8.9%);
+
+.cover .deformation li.deformation05
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: translate(33.3%, -9%);
+  -ms-transform: translate(33.3%, -9%);
+  transform: translate(33.3%, -9%);
+
+.cover .deformation li.deformation06
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -webkit-transform: translate(34.4%, 9.3%);
+  -ms-transform: translate(34.4%, 9.3%);
+  transform: translate(34.4%, 9.3%);
+
+.cover .title
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  top: 40%;
+  margin-left: -27.5%;
+
+.cover .bg_star
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url(../assets/cover_bg_star.png);
+  background-position: center;
+  background-size: 100% 100%;
+  -webkit-animation-name: bg_star;
+  animation-name: bg_star;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+.fp-completely.cover .deformation li
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 1.65, 0.63, 0.97);
+  animation-timing-function: cubic-bezier(0.26, 1.65, 0.63, 0.97);
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+.fp-completely.cover .deformation .deformation01
+  -webkit-animation-name: deformation01;
+  animation-name: deformation01;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+
+.fp-completely.cover .deformation .deformation02
+  -webkit-animation-name: deformation02;
+  animation-name: deformation02;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+
+.fp-completely.cover .deformation .deformation03
+  -webkit-animation-name: deformation03;
+  animation-name: deformation03;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+
+.fp-completely.cover .deformation .deformation04
+  -webkit-animation-name: deformation04;
+  animation-name: deformation04;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+
+.fp-completely.cover .deformation .deformation05
+  -webkit-animation-name: deformation05;
+  animation-name: deformation05;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+
+.fp-completely.cover .deformation .deformation06
+  -webkit-animation-name: deformation06;
+  animation-name: deformation06;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+
+.jacky
+  background-color: #facb16;
+
+.jacky .fire,
+.jacky .poster
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+.jacky .fire
+  background-color: #facb16;
+  /* Rectangle: */
+  background-image: -webkit-linear-gradient(289deg, #facb16 0%, #fcd86b 23%, #ffe7c7 28%, #fad116 35%, #faa216 42%, #fa8c16 49%, #facb16 100%);
+  background-image: linear-gradient(161deg, #facb16 0%, #fcd86b 23%, #ffe7c7 28%, #fad116 35%, #faa216 42%, #fa8c16 49%, #facb16 100%);
+
+.jacky .poster
+  background-image: url(../assets/jacky_portrait.png);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 10s;
+  transition-duration: 10s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+
+.jacky .title
+  position: relative;
+  z-index: 99;
+  width: 80%;
+  margin-top: 62%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 10s;
+  transition-duration: 10s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+
+.jacky .company
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+  width: 50%;
+
+.jacky .spark_a,
+.jacky .spark_b
+  position: absolute;
+  right: 16%;
+  bottom: 0;
+  -webkit-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  transform-origin: right bottom;
+  opacity: 0;
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.3, 0.86, 0.37);
+  animation-timing-function: cubic-bezier(0.18, 0.3, 0.86, 0.37);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+.jacky .spark_a
+  width: 40%;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+
+.jacky .spark_b
+  width: 20%;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+
+.fp-completely.jacky .fire
+  -webkit-animation-name: firebg;
+  animation-name: firebg;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+.fp-completely.jacky .poster
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+
+.fp-completely.jacky .title
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+
+.fp-completely.jacky .spark_a,
+.fp-completely.jacky .spark_b
+  -webkit-animation-name: spark;
+  animation-name: spark;
+
+.ultra
+  background-color: #030102;
+
+.ultra .ultra_bg
+  background-image: url(../assets/ultra_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-filter: brightness(2);
+  filter: brightness(2);
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -webkit-transform-origin: 50% 80%;
+  -ms-transform-origin: 50% 80%;
+  transform-origin: 50% 80%;
+  -webkit-transition-property: -webkit-transform, -webkit-filter, -webkit-transform, filter;
+  transition-property: transform, filter;
+  -webkit-transition-duration: 2s, 2s;
+  transition-duration: 2s, 2s;
+  -webkit-transition-timing-function: cubic-bezier(0.47, 0.09, 0.63, 0.99);
+  transition-timing-function: cubic-bezier(0.47, 0.09, 0.63, 0.99);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+
+.ultra .triangle
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 70%;
+
+.ultra .triangle li
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  top: 0;
+  opacity: 0;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transition-duration: 3s, .5s;
+  transition-duration: 3s, .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.51, 1.49, 0.52, 1.04);
+  transition-timing-function: cubic-bezier(0.51, 1.49, 0.52, 1.04);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+
+.ultra .triangle .triangle1
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transform-origin: 51% 67%;
+  -ms-transform-origin: 51% 67%;
+  transform-origin: 51% 67%;
+  -webkit-transition-delay: 1.6s;
+  transition-delay: 1.6s;
+
+.ultra .triangle .triangle2
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transform-origin: 48% 64%;
+  -ms-transform-origin: 48% 64%;
+  transform-origin: 48% 64%;
+  -webkit-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+
+.ultra .triangle .triangle3
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transform-origin: 47% 59%;
+  -ms-transform-origin: 47% 59%;
+  transform-origin: 47% 59%;
+  -webkit-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+
+.ultra .triangle .triangle4
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transform-origin: 59% 72.4%;
+  -ms-transform-origin: 59% 72.4%;
+  transform-origin: 59% 72.4%;
+  -webkit-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+
+.ultra .triangle .triangle5
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transform-origin: 43% 63%;
+  -ms-transform-origin: 43% 63%;
+  transform-origin: 43% 63%;
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+
+.ultra .triangle .triangle6
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transform-origin: 57% 59%;
+  -ms-transform-origin: 57% 59%;
+  transform-origin: 57% 59%;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+
+.ultra .title
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 10%;
+
+.ultra .inf
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.61), 1px 1px 0px rgba(0, 0, 0, 0.46), 0px 0px 11px #ffffff;
+
+.ultra .inf span
+  font-size: 30px;
+  font-weight: 400;
+
+.fp-completely.ultra .triangle li
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
+
+.fp-completely.ultra .ultra_bg
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+
+.scroll
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+@-webkit-keyframes scroll
+  0%
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+
+  33%
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 0;
+
+  33.1%
+    -webkit-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    opacity: 6;
+
+  66%
+    -webkit-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    opacity: 0;
+
+  66.1%
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+    opacity: 3;
+
+  100%
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+    opacity: 0;
+
+@keyframes scroll
+  0%
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+
+  33%
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 0;
+
+  33.1%
+    -webkit-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    opacity: 6;
+
+  66%
+    -webkit-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    opacity: 0;
+
+  66.1%
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+    opacity: 3;
+
+  100%
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+    opacity: 0;
+
+@-webkit-keyframes deformation01
+  0%
+    opacity: 0;
+    -webkit-transform: translate(34%, -9.1%);
+    transform: translate(34%, -9.1%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(34%, -9.1%);
+    transform: translate(34%, -9.1%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@keyframes deformation01
+  0%
+    opacity: 0;
+    -webkit-transform: translate(34%, -9.1%);
+    transform: translate(34%, -9.1%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(34%, -9.1%);
+    transform: translate(34%, -9.1%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@-webkit-keyframes deformation02
+  0%
+    opacity: 0;
+    -webkit-transform: translate(-33%, -8.8%);
+    transform: translate(-33%, -8.8%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(-33%, -8.8%);
+    transform: translate(-33%, -8.8%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@keyframes deformation02
+  0%
+    opacity: 0;
+    -webkit-transform: translate(-33%, -8.8%);
+    transform: translate(-33%, -8.8%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(-33%, -8.8%);
+    transform: translate(-33%, -8.8%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@-webkit-keyframes deformation03
+  0%
+    opacity: 0;
+    -webkit-transform: translate(-33%, 9%);
+    transform: translate(-33%, 9%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(-33%, 9%);
+    transform: translate(-33%, 9%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@keyframes deformation03
+  0%
+    opacity: 0;
+    -webkit-transform: translate(-33%, 9%);
+    transform: translate(-33%, 9%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(-33%, 9%);
+    transform: translate(-33%, 9%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@-webkit-keyframes deformation04
+  0%
+    opacity: 0;
+    -webkit-transform: translate(-33%, 8.9%);
+    transform: translate(-33%, 8.9%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(-33%, 8.9%);
+    transform: translate(-33%, 8.9%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@keyframes deformation04
+  0%
+    opacity: 0;
+    -webkit-transform: translate(-33%, 8.9%);
+    transform: translate(-33%, 8.9%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(-33%, 8.9%);
+    transform: translate(-33%, 8.9%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@-webkit-keyframes deformation05
+  0%
+    opacity: 0;
+    -webkit-transform: translate(33.3%, -9%);
+    transform: translate(33.3%, -9%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(33.3%, -9%);
+    transform: translate(33.3%, -9%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@keyframes deformation05
+  0%
+    opacity: 0;
+    -webkit-transform: translate(33.3%, -9%);
+    transform: translate(33.3%, -9%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(33.3%, -9%);
+    transform: translate(33.3%, -9%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@-webkit-keyframes deformation06
+  0%
+    opacity: 0;
+    -webkit-transform: translate(34.4%, 9.3%);
+    transform: translate(34.4%, 9.3%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(34.4%, 9.3%);
+    transform: translate(34.4%, 9.3%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@keyframes deformation06
+  0%
+    opacity: 0;
+    -webkit-transform: translate(34.4%, 9.3%);
+    transform: translate(34.4%, 9.3%);
+
+  20%
+    opacity: 1;
+    -webkit-transform: translate(34.4%, 9.3%);
+    transform: translate(34.4%, 9.3%);
+
+  100%
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+
+@-webkit-keyframes firebg
+  from
+    -webkit-transform: translate(0%, 100%);
+    transform: translate(0%, 100%);
+
+  to
+    -webkit-transform: translate(0%, -100%);
+    transform: translate(0%, -100%);
+
+@keyframes firebg
+  from
+    -webkit-transform: translate(0%, 100%);
+    transform: translate(0%, 100%);
+
+  to
+    -webkit-transform: translate(0%, -100%);
+    transform: translate(0%, -100%);
+
+@-webkit-keyframes poster
+  from
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+
+  to
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+
+@keyframes poster
+  from
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+
+  to
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+
+@-webkit-keyframes spark
+  0%
+    -webkit-transform: translate(0%, 0%) scale(0.95, 0.95);
+    transform: translate(0%, 0%) scale(0.95, 0.95);
+    opacity: 0;
+
+  60%
+    opacity: 1;
+
+  100%
+    -webkit-transform: translate(0%, 0%) scale(1.05, 1.05);
+    transform: translate(0%, 0%) scale(1.05, 1.05);
+    opacity: 0;
+
+@keyframes spark
+  0%
+    -webkit-transform: translate(0%, 0%) scale(0.95, 0.95);
+    transform: translate(0%, 0%) scale(0.95, 0.95);
+    opacity: 0;
+
+  60%
+    opacity: 1;
+
+  100%
+    -webkit-transform: translate(0%, 0%) scale(1.05, 1.05);
+    transform: translate(0%, 0%) scale(1.05, 1.05);
+    opacity: 0;
+
+@-webkit-keyframes bg_star
+  from
+    -webkit-transform: scale(1.1, 1.1) rotate(10deg);
+    transform: scale(1.1, 1.1) rotate(10deg);
+
+  to
+    -webkit-transform: scale(1, 1) rotate(0deg);
+    transform: scale(1, 1) rotate(0deg);
+
+@keyframes bg_star
+  from
+    -webkit-transform: scale(1.1, 1.1) rotate(10deg);
+    transform: scale(1.1, 1.1) rotate(10deg);
+
+  to
+    -webkit-transform: scale(1, 1) rotate(0deg);
+    transform: scale(1, 1) rotate(0deg);
+  

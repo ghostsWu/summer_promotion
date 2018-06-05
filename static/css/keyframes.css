@@ -1,0 +1,60 @@
+@keyframes food-top-bottom {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+
+}
+
+
+@keyframes food-top-right {
+    0% {
+        top: -100%;
+        right: -100%;
+    }
+    100% {
+        top: 0;
+        right: 0;
+    }
+
+}
+@keyframes food-top {
+    100% {
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+@keyframes red-balloon {
+
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 5px;
+    }
+
+    100% {
+        right: 0;
+    }
+
+}
+@keyframes blue-balloon {
+
+    0% {
+        right: -15px;
+    }
+    50% {
+        right: -20px;
+    }
+    100% {
+        right: -15px;
+    }
+
+}

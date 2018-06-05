@@ -1,0 +1,100 @@
+
+.page-food
+  background #2c2c27
+  .food-top
+    top 0
+    left 0
+    width 67%
+
+    -webkit-transform translate(-100%, -100%)
+    -moz-transform translate(-100%, -100%)
+    -ms-transform translate(-100%, -100%)
+    -o-transform translate(-100%, -100%)
+    transform translate(-100%, -100%)
+
+  .food-top-right
+    width 41%
+    top 0
+    right -20px
+    -webkit-transform translate(100%, -100%)
+    -moz-transform translate(100%, -100%)
+    -ms-transform translate(100%, -100%)
+    -o-transform translate(100%, -100%)
+    transform translate(100%, -100%)
+
+  .food-top-bottom
+    width 36%
+    right 0
+    top 100px
+    -webkit-transform translate(100%, 0)
+    -moz-transform translate(100%, 0)
+    -ms-transform translate(100%, 0)
+    -o-transform translate(100%, 0)
+    transform translate(100%, 0)
+
+  .food-top,
+  .food-top-right,
+  .food-top-bottom
+    position absolute
+    -webkit-transition all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+    -moz-transition all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+    -ms-transition all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+    -o-transition all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+    transition all cubic-bezier(0.34, 0.15, 0.26, 1) 2s
+
+  .food-title
+    position absolute
+    left 50%
+    top 220px
+    -webkit-transform translateX(-50%)
+    -moz-transform translateX(-50%)
+    -ms-transform translateX(-50%)
+    -o-transform translateX(-50%)
+    transform translateX(-50%)
+    width 66%
+
+  .food-logo
+    position absolute
+    bottom 20px
+    left 0
+    right 0
+    width 100%
+    td
+      width (100 / 3) * 1%
+      text-align center
+      position relative
+      padding-bottom 26px
+      img
+        display block
+        width 70%
+        margin auto
+      div
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        height 30px
+        font-size 16px
+        line-height 36px
+        color #999
+
+  .food-tips
+    position absolute
+    bottom 20px
+    right 10px
+    text-align right
+    color #fff
+    font-size 10px
+
+@media only screen and (min-width 480px)
+
+  .food-title
+    top 360px
+
+@media only screen and (min-width 400px)
+  .food-title
+    top 240px
+  
+
+
+
